@@ -19,7 +19,6 @@ apollo.applyMiddleware({
 })
 
 const server = http.createServer(app)
-
 server.listen({ port: 8081 }, () => {
     console.log("Graphql ready!")
 });

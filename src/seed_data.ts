@@ -1,4 +1,4 @@
-let feedbacks = [
+const feedbacks = [
     {
         "username": "Albert",
         "rating": 3.7,
