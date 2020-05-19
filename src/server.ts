@@ -5,7 +5,7 @@ import * as http from "http"
 
 import typeDefs from "./schema"
 import resolvers from "./resolver"
-const express = require('express')
+import express from "express"
 
 const apollo = new ApolloServer({typeDefs, resolvers})
 

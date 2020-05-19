@@ -5,11 +5,11 @@ const resolvers = {
         feedbacks: () => feedbacks,
     },
     Mutation: {
-        createFeedback: (roots: any, args: any, context: any) => {
+        createFeedback: (roots: any, {username, message, rating}: {username: string, message: string, rating: number}, context: any) => {
             const newFeedback = {
-                "username": args.username,
-                "message": args.message,
-                "rating": args.rating,
+                username,
+                message,
+                rating,
             }
             feedbacks.push(newFeedback)
 
